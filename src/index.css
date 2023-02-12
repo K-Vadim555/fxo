@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./fxo-img/fon4.jpg);
-  display: flex;
+  display: none;
   margin: 0 auto !important;
   justify-content: center;
   background-position: 0 0;
