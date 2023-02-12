@@ -1,0 +1,354 @@
+.heart-wr {
+    position: relative;
+    width: 8.5vw;
+	height: 8.5vw;
+}
+.half {
+    width: 20vw !important;
+    height: 35vw !important;
+    display: flex !important;
+    margin: 0 auto !important;
+    position: relative;
+    cursor: pointer;
+	
+	img {
+        width: 100%;
+        height: 100%;
+        order: -1;
+        position: absolute;
+        top: 0vw;
+    }
+    p {
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 3vw;
+        color: rgb(255, 127, 214);
+        order: 2;
+        position: absolute;
+        top: 10vw;
+        transform: rotate(35deg);
+    }
+}
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: fit-content !important;
+    padding: 0 !important;
+    border-radius: 4px;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border: none !important;
+    color: transparent !important;
+}
+.heart {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    top: 5vw;
+    left: 10vw;
+	-webkit-transform: rotate(45deg);  /* для Chrome и Safari */
+	-moz-transform: rotate(45deg); /* для Firefox */ 
+	-o-transform: rotate(45deg); /* для Opera */ 
+	transform: rotate(45deg);
+	border: solid 1px red;
+	border-top: none;
+	border-left: none;
+    background: red;
+		/* для браузеров, которые не поддерживают градиент */
+	background: -webkit-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* для Chrome и Safari */
+	background: -moz-radial-gradient(170% 50%, circle , #8B0000 0%, #8B0000 52%,  red 76%);
+		/* для Firefox */
+	background: -o-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* для Opera */
+	background: radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+		/* по стандартам CSS3 */
+
+        animation-name: anime;
+		/* имя кейфрейма для анимации */
+	animation-duration: 300ms;
+		/* длительность анимации */
+	animation-iteration-count: infinite;
+		/* количество повторений, в данном случае - бесконечно */
+	animation-direction: alternate;
+		/* проигрывать анимацию в прямом и в обратном порядке */
+	animation-timing-function: ease-in;
+    webkit-animation-name: anime;
+	-webkit-animation-duration: 300ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: ease-in;
+}
+
+.heart:before, .heart:after {
+	position:absolute;
+	content: ' ';
+	-webkit-border-radius: 50px 0 0 50px;
+	-moz-border-radius: 50px 0 0 50px;
+	border-radius: 50px 0 0 50px;
+	width: 6vw;
+	height: 9vw;
+	border: solid 1px red;
+	border-right: none;
+	left:-6vw;
+}
+.heart:after {
+	position: absolute;
+	left: 1vw;
+	top: -8vw;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+    background: red;
+	background: -webkit-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+	background: -moz-radial-gradient(50% 80%, circle, #FFB6C1, red, #8B0000 90%);
+	background: -o-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+	background: radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+}
+.heart:before {
+	background: red;
+	background: -webkit-radial-gradient(15% 50%, 65px 65px, #FFE4E1, red);
+	background: -moz-radial-gradient(15% 50%, circle, #FFE4E1, red 85%);
+	background: -o-radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+	background: radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+}
+@keyframes anime {
+	from {
+		transform: scale(1) rotate(45deg);
+	}
+	to {
+		transform: scale(1.1) rotate(45deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.rhombus {
+    margin: 40px 0 0 60px;
+    /*background: #fcfcfc;*/
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 10px;
+    float: center;
+}
+
+.rhombus:before {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    transform: rotate(45deg);
+}
+
+.rhombus .circle1 {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-name: change1;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+}
+
+.rhombus .circle2 {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    margin-left: 30px;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-name: change2;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+}
+
+.rhombus2 {
+    margin: 40px 0 0 60px;
+    /*background: #fcfcfc;*/
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 10px;
+    float: center;
+    animation-delay: 0.9s;
+    animation-duration: 0.8s;
+    animation-name: pump;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.26,-0.53,.57,2.32);
+}
+
+.rhombus2:before {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    transform: rotate(45deg);
+}
+
+.rhombus2 .circle21 {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    border-radius: 50%;
+    /*animation-direction: alternate;*/
+}
+
+.rhombus2 .circle22 {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    margin-left: 30px;
+    border-radius: 50%;
+    /*animation-direction: alternate;*/
+}
+
+@keyframes pump {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes change1 {
+    0%,
+    25% {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    50%,
+    75% {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+@keyframes change2 {
+    25%,
+    50% {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    75%,
+    100% {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+}
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop , .css-919eu4 ,.css-8ndowl {
+    background-image: url(../../fxo-img/fon2.jpg) !important;
+    display: flex !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+    background-position: 0 0 !important;
+    background-repeat: repeat !important;
+    background-size: unset !important;
+}
+.val {
+    
+        width: 100%;
+    
+}
+.close-modal-btn {
+    position: absolute;
+    right: 0vw;
+    top: 15vw;
+    font-size: 12vw;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    transform: rotate(45deg);
+    border: none;
+    color: #8e0036;
+}
+.modal-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    text-align: center;
+    color:wheat;
+}
