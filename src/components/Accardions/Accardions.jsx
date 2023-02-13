@@ -21,6 +21,10 @@ import Acc from '../Accaordion2/Acc';
 import Popup from '../popup/Popup';
 import XO from '../../fxo-img/XO.jpg'
 import KB from '../../fxo-img/KB.jpg'
+import y1 from '../../fxo-img/y1.jpg'
+import y2 from '../../fxo-img/y2.jpg'
+import y3 from '../../fxo-img/y3.jpg'
+import y4 from '../../fxo-img/y4.jpg'
 
 export default function Accardions() {
             {/*---------------- функция , чтобы открывать сохдаваемые посты  -------------------------*/ }
@@ -166,7 +170,12 @@ export default function Accardions() {
                
              </div> 
            
-             
+             <div className="photos">
+             <img src={y1} alt="" />
+             <img src={y2} alt="" />
+             <img src={y3} alt="" />
+             <img src={y4} alt="" />
+             </div>
              </div>
            }
              img={icon4}
