@@ -148,6 +148,14 @@ iframe {
     justify-content: center;
     align-items: center;
 }
+.fon-wr {
+    display: flex;
+    justify-content: space-between;
+}
+.fon {
+    width: 45%;
+    margin: 0 auto;
+}
 .main-text {
     font-family: 'Palanquin Dark';
 font-style: normal;
@@ -282,6 +290,7 @@ color: #FFFFFF;
             }
             .public-data {
                 font-size: 6vw !important;
+
                
             }
             .public-data:first-child {

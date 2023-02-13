@@ -24,6 +24,10 @@ import Heart from './components/fxo/Heart';
 import half from './fxo-img/half.png'
 import Popup from './components/popup/Popup';
 import Heart1 from './components/fxo/Heart1';
+import mem3 from './fxo-img/mem3.jpg'
+import mem2 from './fxo-img/mem2.jpg'
+import mem1 from './fxo-img/mem1.jpg'
+import Name from './components/fxo/Name';
 
 function App() {
   const [posts, setPosts] = useState( [
@@ -122,25 +126,25 @@ function App() {
      }}/>
      <Heart  style={{
       position:'absolute',
-      top:'30vw',
+      top:'42vw',
       left:'0vw',
       zIndex: '9995'
      }}/>
      <Heart1  style={{
       position:'absolute',
-      top:'30vw',
+      top:'38vw',
       left:'25vw',
       zIndex: '9995'
      }}/>
       <Heart1  style={{
       position:'absolute',
-      top:'40vw',
-      left:'80vw',
+      top:'30vw',
+      left:'85vw',
       zIndex: '9995'
      }}/>
       <Heart1  style={{
       position:'absolute',
-      top:'50vw',
+      top:'58vw',
       left:'10vw',
       zIndex: '9995'
      }}/>
@@ -176,7 +180,7 @@ function App() {
      }}/>
       <Heart1  style={{
       position:'absolute',
-      top:'80vw',
+      top:'95vw',
       left:'67vw',
       zIndex: '9995'
      }}/>
@@ -186,7 +190,77 @@ function App() {
       left:'33vw',
       zIndex: '9995'
      }}/>
-
+     <img style={{
+         width:'15vw',
+         position:'absolute',
+         zIndex: '1195',
+      top:'7vw',
+      left:'70vw',
+     }} src={mem3}/>
+      <img style={{
+      width:'35vw',
+      zIndex: '1195',
+      position:'absolute',
+      top:'23vw',
+      left:'3vw',
+    }} src={mem2}/>
+    <Name  text={'XO'}
+      style={{
+      color:'red',
+      fontSize:'3vw',
+      position:'absolute',
+      top:'36vw',
+      zIndex:'1196',
+      left:'25vw',
+      width:'fit-content'
+      }}/>
+      <Name  text={'KB'}
+      style={{
+      color:'red',
+      fontSize:'2.5vw',
+      position:'absolute',
+      top:'38.5vw',
+      zIndex:'1196',
+      left:'25vw',
+      width:'fit-content'
+      }}/>
+     <img style={{
+      width:'40vw',
+      zIndex: '1195',
+      position:'absolute',
+      top:'46.5vw',
+      left:'56vw',
+    }} src={mem1}/>
+    <Name
+      text={'XO'}
+      style={{
+      color:'red',
+      fontSize:'7vw',
+      position:'absolute',
+      top:'7vw',
+      left:'85vw',
+      width:'fit-content'
+    }}/>
+         <Name  text={'XO'}
+      style={{
+      color:'red',
+      fontSize:'3vw',
+      position:'absolute',
+      top:'51vw',
+      zIndex:'1196',
+      left:'64vw',
+      width:'fit-content'
+      }}/>
+      <Name  text={'KB'}
+      style={{
+      color:'red',
+      fontSize:'2.5vw',
+      position:'absolute',
+      top:'49vw',
+      zIndex:'1196',
+      left:'62vw',
+      width:'fit-content'
+      }}/>
     <Popup buttonText={<><img  src={half}/> <p> XO , click me :)</p></>}/>
     
    

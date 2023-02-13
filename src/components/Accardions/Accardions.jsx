@@ -15,10 +15,12 @@ import fon from '../../img/Rectangle 20.png'
 import fonPublic from '../../img/BLUR_BG.png'
 import sec1 from '../../img/Rectangle 21.png'
 import sec2 from '../../img/ИНФОРМАЦИЯ СКОРО.png'
-import hotel from '../../img/Rectangle 23.png'
+import hotel from '../../fxo-img/comrat.jpg'
 import { useTranslation } from 'react-i18next';
 import Acc from '../Accaordion2/Acc';
 import Popup from '../popup/Popup';
+import XO from '../../fxo-img/XO.jpg'
+import KB from '../../fxo-img/KB.jpg'
 
 export default function Accardions() {
             {/*---------------- функция , чтобы открывать сохдаваемые посты  -------------------------*/ }
@@ -33,7 +35,7 @@ export default function Accardions() {
              let [dat, setdat] = useState([
                 {
                     id:1, 
-                    data:'18 ',
+                    data:'8 ЯНВАРЯ',
                     img:'',
                     title:'ПЕРВОЕ СОБЫТИЕ',
                     content:'4rc',
@@ -42,7 +44,7 @@ export default function Accardions() {
                 {
                     id:2,
                     img:'',
-                    data:'19 ',
+                    data:'25 ФЕВРАЛЯ ',
                     title:'ВТОРОЕ СОБЫТИЕ',
                     content:'c4rc4',
         
@@ -50,7 +52,7 @@ export default function Accardions() {
                 {
                     id:3,
                     img:'',
-                    data:'20 ',
+                    data:'21 СЕНТЯБРЯ',
                     title:'ТРЕТЬЕ СОБЫТИЕ',
                     content:'c4rc4',
         
@@ -58,7 +60,8 @@ export default function Accardions() {
                 {
                     id:4,
                     img:'',
-                    data:'21 ',
+                    data:'21 СЕНТЯБРЯ',
+                 
                     title:'ЧЕТВЕРТОЕ СОБЫТИЕ',
                     content:'c4rc4',
         
@@ -66,44 +69,26 @@ export default function Accardions() {
                 {
                     id:5,
                     img:'',
-                    data:'22 ',
+                    data:'13 ФЕВРАЛЯ 2023',
                     title:'ПЯТОЕ СОБЫТИЕ',
-                    content:'c4rc4',
+                    content:'',
         
                 },
-                {
-                    id:6,
-                    img:'',
-                    data:'23 ',
-                    title: 'ШЕСТОЕ СОБЫТИЕ',
-                    content:'c4rc4',
-        
-                },
-                {
-                    id:7,
-                    img:'',
-                    data:'24 ',
-                    title:'СЕДЬМОЕ СОБЫТИЕ',
-                    content:'c4rc4',
-        
-                },
+               
                 
              ])
              let l = dat.map(da => 
                 <div key={da.id} className="public">
                   <div className="">
-                    <p className='public-data'>{t(da.data)}</p><p className='public-data'> {t('МАЯ')} </p> 
+                    <p className='public-data'>{t(da.data)}</p> 
                   </div>
-                     {t('')}
-                      <img className='public-img' src={photo} alt="" />
+                     
                   
                
-                <img className='public-fon' src={fonPublic} alt="" />
+               
                 <div className="public-div2"> 
                  <p className='public-title'>{t(da.title)}</p>
-                <p className='cl'> <span>22.00 - 00.05</span>  - {t('Military Party в Afro Fusion')}</p>
-                <p className='cl'><span>{t('Адрес')}:</span> {t(' ст.м. Тургеневская/Чистые пруды/Сретенский бульвар Сретенский бульвар, 6/1с2')}</p>
-                <p className='cl'> <span>{t('В ход:')}</span>  {t(' 650 рублей')}</p>
+               
                 </div>
                 
                 </div>
@@ -114,9 +99,8 @@ export default function Accardions() {
           <div  className="accordions">
                 <Acc
                  style={'acc'}
-             title={t('program')}
+             title={'История'}
              content={<>
-           
              {l}
              </>}
              img={ico}
@@ -125,35 +109,35 @@ export default function Accardions() {
                  <Acc
                   style={'acc'}
              title={t('artists')}
-             content={<img className='fon' src={fon}></img>}
+             content={<div className='fon-wr'>
+             <img className='fon' src={KB}></img>
+             <img className='fon' src={XO}></img>
+             </div>}
              img={icon}
             
                 />
                    <Acc
                     style={'acc'}
-             title={t('ticets')}
+             title={'Билеты в ...'}
              content={<>
-             <p className='ticet-title'>{t('УСЛОВИЯ ПОКУПКИ БИЛЕТОВ')} </p>
-                <p className='ticet-content'>{t('lorem')}</p>
+             <p className='ticet-title'>Билеты в пронто заказаны на 15:00 </p>
+                <p className='ticet-content'>Буду ждать</p>
              
-                <Popup buttonText={t('buyTicets')} className={'ticet-get'}/>
+             
              </>}
              img={icon2}
             
                 />
                    <Acc
                     style={'acc'}
-             title={t('TIMETABLE')}
+             title={'РАСПИСАНИЕ'}
              content={
              <div className='rasp'>
-                <div className="sec1">
-                    <p> {t('РАСПИСАНИЕ НА МАСТЕР-КЛАССЫ')} </p>
-                    <img src={sec1} alt="" />
-                </div>
-                <div className="sec2">
-                    <p>{t('РАСПИСАНИЕ НА ДИДЖЕЙСТВО')}</p>
-                <img src={sec2} alt="" />
-                </div>
+               <p>15:00 - PRONTO</p> 
+               <p>17:00 - КАУФЛЭЭЭЭЭЭНД ЗА пончиками</p> 
+               <p>19:00 - TOM-TOM</p> 
+               <p>20:00 - evya/acasa/home</p> 
+               <p>22:00 - Вадим спит</p> 
              </div>}
              img={icon3}
             
@@ -166,28 +150,23 @@ export default function Accardions() {
                 <img className='hotel-logo' src={hotel} alt="" />
                 <div className="hotel-text">
                     <div className="">
-                           <p className="title1">{t('THE NAME OF THE HOTEL')}</p>
-                    <p className="content1">{t('lorem')}</p>
+                           <p className="title1">НАЗВАНИЕ ОТЕЛЯ</p>
+                    <p className="content1">КОМРАТ</p>
                     </div>
                     <div className="">
                            <p className="title1">{t('price')}</p>
-                    <p className="content1">{t('lorem')}</p>
+                    <p className="content1">бесценно</p>
                     </div>
                     <div className="">
-                           <p className="title1">{t('PROMO CODE')}</p>
-                    <p className="content1">{t('lorem')}</p>
+                           <p className="title1">PROMO CODE</p>
+                    <p className="content1">ялпуг</p>
                     </div>
                  
                 </div>
                
              </div> 
-             <Popup buttonText={t('ЗАБРОНИРОВАТЬ')} className={'ticet-get'}/>
-             <div className="photos">
-             <img src={hotel} alt="" />
-             <img src={hotel} alt="" />
-             <img src={hotel} alt="" />
-             <img src={hotel} alt="" />
-             </div>
+           
+             
              </div>
            }
              img={icon4}

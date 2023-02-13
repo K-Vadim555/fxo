@@ -35,7 +35,7 @@ const Page1 = ({posts}) => {
             id:1, 
             data:'18 ',
             img:'',
-            title:t('ПЕРВОЕ СОБЫТИЕ'),
+            title:'ПЕРВОЕ СОБЫТИЕ',
             content:'4rc',
 
         },
@@ -43,14 +43,14 @@ const Page1 = ({posts}) => {
             id:2,
             img:'',
             data:'19 ',
-            title:t('ВТОРОЕ СОБЫТИЕ'),
+            title:'ВТОРОЕ СОБЫТИЕ',
             content:'c4rc4',
 
         },
         {
             id:3,
             img:'',
-            data:'20 ',
+            data:' ',
             title:t('ТРЕТЬЕ СОБЫТИЕ'),
             content:'c4rc4',
 
@@ -92,7 +92,7 @@ const Page1 = ({posts}) => {
      let l = dat.map(da => 
         <div key={da.id} className="public">
           <div className="">
-            <p className='public-data'>{da.data}</p><p className='public-data'> {t('МАЯ')} </p> 
+            <p className='public-data'>{da.data}</p>
           </div>
             
               <img className='public-img' src={photo} alt="" />
